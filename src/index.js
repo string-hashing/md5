@@ -1,2 +1,2 @@
-const answer = 42;
-export default answer;
+export * from './md5.js';
+export * from './md5fast.js';
