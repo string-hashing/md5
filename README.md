@@ -4,12 +4,17 @@
 MD5 bytestring hashing for JavaScript.
 See [docs](https://string-hashing.github.io/md5/index.html).
 
-> :building_construction: Caveat emptor! This is work in progress. Code may be
-> working. Documentation may be present. Coherence may be. Maybe.
-
-> :warning: Depending on your environment, the code may require
-> `regeneratorRuntime` to be defined, for instance by importing
-> [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
+```js
+import {alloc} from '@array-like/alloc';
+import * as ascii from '@codec-bytes/ascii';
+import * as base16 from '@codec-bytes/base16';
+import {md5} from '@string-hashing/md5';
+const string = 'The quick brown fox jumps over the lazy dog';
+const bytes = ascii.encode(string);
+const digest = md5(bytes, bytes.length * 8, alloc(16));
+digest; // [0x9e, 0x10, 0x7d, 0x9d, 0x37, 0x2b, 0xb6, 0x82, 0x6b, 0xd8, ...]
+base16.decode(digest); // '9E107D9D372BB6826BD81D3542A419D6'
+```
 
 [![License](https://img.shields.io/github/license/string-hashing/md5.svg)](https://raw.githubusercontent.com/string-hashing/md5/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@string-hashing/md5.svg)](https://www.npmjs.org/package/@string-hashing/md5)
