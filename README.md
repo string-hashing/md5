@@ -18,7 +18,7 @@ base16.decode(digest); // '9E107D9D372BB6826BD81D3542A419D6'
 
 [![License](https://img.shields.io/github/license/string-hashing/md5.svg)](https://raw.githubusercontent.com/string-hashing/md5/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@string-hashing/md5.svg)](https://www.npmjs.org/package/@string-hashing/md5)
-[![Tests](https://img.shields.io/github/workflow/status/string-hashing/md5/ci?event=push&label=tests)](https://github.com/string-hashing/md5/actions/workflows/ci.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/actions/workflow/status/string-hashing/md5/ci.yml?branch=main&event=push&label=tests)](https://github.com/string-hashing/md5/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/string-hashing/md5.svg)](https://github.com/string-hashing/md5/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/string-hashing/md5.svg)](https://github.com/string-hashing/md5/issues)
 [![Downloads](https://img.shields.io/npm/dm/@string-hashing/md5.svg)](https://www.npmjs.org/package/@string-hashing/md5)
